@@ -19,4 +19,4 @@ https://crunchyroll.com/...
 
 because crunchyroll beta seems to throw "unsupported link" errors
 
-if you want to have this as an executable create and issue requesting as such and i will create a release with the executable as soon as i am able to
+if you want to have this as an executable create an issue requesting as such and i will create a release with the executable as soon as i am able to
