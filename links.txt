@@ -1,0 +1,13 @@
+// use double slash as comment, paste the links to the anime you want downloaded here and run main.py and then it will download for you
+// any amount will do, it may take quite some time however
+//
+// example: is set to download Attack On Titan below
+
+https://crunchyroll.com/watch/G68VMX7D6/the-world-the-girl-saw---battle-for-trost-2
+https://crunchyroll.com/watch/GYDQVNGD6/the-small-blade---the-battle-for-trost-3
+https://crunchyroll.com/watch/GR5VJXGER/hearing-the-heartbeat---the-battle-for-trost-4
+https://crunchyroll.com/watch/G6GGV9726/where-the-left-arm-went----the-battle-for-trost-5
+https://crunchyroll.com/watch/G6E5MK08Y/response---the-battle-for-trost-6
+https://crunchyroll.com/watch/GY9PXM98R/icon---the-battle-for-trost-7
+https://crunchyroll.com/watch/GY49GMWWR/wound---the-battle-for-trost-8
+https://crunchyroll.com/watch/GYJQK14E6/primal-desires---the-battle-for-trost-9
