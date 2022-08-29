@@ -22,4 +22,11 @@ https://crunchyroll.com/...
 
 because crunchyroll beta seems to throw "unsupported link" errors
 
-if you want to have this as an executable create an issue requesting as such and i will create a release with the executable as soon as i am able to
+# something to note about crunchyroll and possibly other sites
+
+if you try to download a video that requires premium or equivalent it will throw an error and be unable to continue
+
+# Distributions of this script
+
+if you want to have a particular feature added to this script create an issue and i will add the feature as soon as i am able to
+this is the same with EXEs if you want to have an executable create an issue and i will do my best
