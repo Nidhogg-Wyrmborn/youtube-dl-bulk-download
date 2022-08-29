@@ -1,5 +1,8 @@
 # youtube-dl bulk download 
 
+IMPORTANT: if you download a video with subtitles, KEEP THE .ASS FILES, if you delete them the video won't have subtitles anymore
+i will find a way to fix this but for now DO NOT DELETE THEM
+
 This is a custom script i put together to allow people to bulk download videos from any media
 
 the main idea is that it runs through each video unless it fails in which case it tries again
