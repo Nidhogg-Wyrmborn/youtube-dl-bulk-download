@@ -1,7 +1,5 @@
 // use double slash as comment, paste the links to the anime you want downloaded here and run main.py and then it will download for you
 // any amount will do, it may take quite some time however
-//
-// example: is set to download Attack On Titan below
 
 https://crunchyroll.com/watch/GRDQVEK7Y/fiesta-for-the-observers-ii
 https://crunchyroll.com/watch/G65VJZP36/fiesta-for-the-observers-iii
