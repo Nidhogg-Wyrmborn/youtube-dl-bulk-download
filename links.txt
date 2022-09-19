@@ -2,14 +2,17 @@
 // any amount will do, it may take quite some time however
 //
 // you can put a link and then -x at the end to download only sound or music
+// after the link put -l "en" for english subs if it downloads the wrong one
 // enjoy
 
-https://crunchyroll.com/watch/GRDQVEK7Y/fiesta-for-the-observers-ii
-https://crunchyroll.com/watch/G65VJZP36/fiesta-for-the-observers-iii
-https://crunchyroll.com/watch/GYGGVX5DY/fiesta-for-the-observers-iv
-https://crunchyroll.com/watch/GYE5M7X0R/return-of-the-alchemist-i
-https://crunchyroll.com/watch/GR9PXZVE6/return-of-the-alchemist-ii
-https://crunchyroll.com/watch/GR49GDPE6/return-of-the-alchemist-iii
-https://crunchyroll.com/watch/GRJQKJ05Y/empire-of-the-dawn-i
-https://crunchyroll.com/watch/GY5VJZJ0Y/empire-of-the-dawn-ii
-https://www.youtube.com/watch?v=tSbOBSaGtMs&list=RDMMtSbOBSaGtMs&index=1
+https://crunchyroll.com/watch/GY9P2X18R/scrap--build -l enUS
+https://crunchyroll.com/watch/GYGGZP42Y/light--shadow -l enUS
+https://crunchyroll.com/watch/G6494790Y/hide--seek -l enUS
+https://crunchyroll.com/watch/G65V13576/trial--error -l enUS
+https://crunchyroll.com/watch/GR3VX8PQ6/new--old -l enUS
+https://crunchyroll.com/watch/GYWE8952Y/secret--quest -l enUS
+https://beta.crunchyroll.com/watch/GY8VK0GGY/force--solution -l enUS
+https://beta.crunchyroll.com/watch/GRP8ZM01R/war--princess -l enUS
+https://beta.crunchyroll.com/watch/GRNQZ408R/hit--away -l enUS
+https://crunchyroll.com/watch/GY09ZDZ9Y/knight--dragon -l enUS
+https://beta.crunchyroll.com/watch/G6JQ4K18R/heaven--earth -l enUS

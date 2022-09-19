@@ -4,6 +4,13 @@ from datetime import datetime
 import argparse
 import time
 
+def isen(link):
+    print(link.split(" ")[1:])
+    if "-l" in link.split(" ")[1:]:
+        return True
+    else:
+        return False
+
 def hasaudio(link):
     if "-x" in link.split(" ")[1:]:
         return True
@@ -49,33 +56,64 @@ for link in links:
     a = 1
     count = 0
     if not hasaudio(link):
-        link = removeSwitch(link)
-        while a != 0 and a != 255:
-            if count < 5:
-                a = os.system(f"youtube-dl --write-sub --embed-subs \"{link}\"")
-            if count >= 5:
-                if "win" in sys.platform:
-                    os.system("cls")
-                else:
-                    os.system("clear")
-                a = os.system(f"youtube-dl -v --write-sub --embed-subs \"{link}\"")
-                if a != 0:
-                    print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
-                    print("\nyoutube-dl version: ", end="")
-                    os.system("youtube-dl --version")
-                    print("\nhttps://github.com/ytdl-org/youtube-dl")
-                    print()
-                    print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
-                    print("please create an issue in this script's github in the event that it is related to this program")
-                    print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
-                    print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
-                    print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
-                    print(f"Current download: {link}"+"\n\n")
-                    print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
-                    time.sleep(5)
-                    quit()
-            count += 1
-            print(f"\nError Code: {a}\n")
+        if isen(link):
+            lang = link.split("-l")[-1:][0].split(" ")[1]
+            link = removeSwitch(link)
+            while a != 0 and a != 255:
+                if count < 5:
+                    a = os.system(f"youtube-dl --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
+                if count >= 5:
+                    if "win" in sys.platform:
+                        os.system("cls")
+                    else:
+                        os.system("clear")
+                    a = os.system(f"youtube-dl -v --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
+                    if a != 0:
+                        print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
+                        print("\nyoutube-dl version: ", end="")
+                        os.system("youtube-dl --version")
+                        print("\nhttps://github.com/ytdl-org/youtube-dl")
+                        print()
+                        print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
+                        print("please create an issue in this script's github in the event that it is related to this program")
+                        print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
+                        print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
+                        print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
+                        print(f"Current download: {link}"+"\n\n")
+                        print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
+                        time.sleep(5)
+                        quit()
+                count += 1
+                print(f"\nError Code: {a}\n")
+        else:
+            link = removeSwitch(link)
+            while a != 0 and a != 255:
+                if count < 5:
+                    a = os.system(f"youtube-dl --write-sub --embed-subs \"{link}\"")
+                if count >= 5:
+                    if "win" in sys.platform:
+                        os.system("cls")
+                    else:
+                        os.system("clear")
+                    a = os.system(f"youtube-dl -v --write-sub --embed-subs \"{link}\"")
+                    if a != 0:
+                        print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
+                        print("\nyoutube-dl version: ", end="")
+                        os.system("youtube-dl --version")
+                        print("\nhttps://github.com/ytdl-org/youtube-dl")
+                        print()
+                        print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
+                        print("please create an issue in this script's github in the event that it is related to this program")
+                        print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
+                        print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
+                        print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
+                        print(f"Current download: {link}"+"\n\n")
+                        print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
+                        time.sleep(5)
+                        quit()
+                count += 1
+                print(f"\nError Code: {a}\n")
+
     if hasaudio(link):
         link = removeSwitch(link)
         while a != 0 and a != 255:
