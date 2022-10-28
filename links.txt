@@ -9,15 +9,15 @@
 // if possible find english subtitles embedded
 
 //Tsukimichi -moonlit fantasy-
-https://vrv.co/watch/G8WUN2W3W/failed-hero -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GZ7UVPXQJ/black-spider-of-disaster -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GD9UV2W9P/human-shock -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GQJUGE9N1/too-late -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/G50UZE4KP/the-greedy-wagons-journey -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GWDU8PKV1/the-melancholy-of-handsome-middle-aged-men -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GG1U2DEWG/wondrous-medicine-production -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/G0DUN90GJ/demiplane-ranking -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GEVUZ8GJX/eat-or-be-eaten -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/G7PU4WVP1/hidden-ogre-village -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/G9DUEDPZ0/goodbye -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
-https://vrv.co/watch/GX9UQK7M1/guided-by-the-moon -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/G8WUN2W3W/failed-hero -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GZ7UVPXQJ/black-spider-of-disaster -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GD9UV2W9P/human-shock -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GQJUGE9N1/too-late -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/G50UZE4KP/the-greedy-wagons-journey -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GWDU8PKV1/the-melancholy-of-handsome-middle-aged-men -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GG1U2DEWG/wondrous-medicine-production -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/G0DUN90GJ/demiplane-ranking -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GEVUZ8GJX/eat-or-be-eaten -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/G7PU4WVP1/hidden-ogre-village -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/G9DUEDPZ0/goodbye -f hls-audio-ja-JP-hardsub-en-US-8121
+https://vrv.co/watch/GX9UQK7M1/guided-by-the-moon -f hls-audio-ja-JP-hardsub-en-US-8121

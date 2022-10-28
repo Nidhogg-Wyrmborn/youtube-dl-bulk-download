@@ -96,13 +96,18 @@ for link in links:
             lang = None
             if isen(link):
                 lang = link.split("-l")[-1:][0].split(" ")[1]
-            spec = link.split("-f")[-1:][0].split(" ")[1]
+            print(link)
+            spec = link.split(" -f ")
+            print(spec)
+            spec = spec[-1:][0]
+            print(spec)
             link = removeSwitch(link)
             while a != 0 and a != 255:
                 if count < 5:
                     if lang:
                         a = os.system(f"youtube-dl -f {spec} --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
                     else:
+                        print(f"youtube-dl -f {spec} \"{link}\"")
                         a = os.system(f"youtube-dl -f {spec} \"{link}\"")
                 if count >= 5:
                     if "win" in sys.platform:
