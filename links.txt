@@ -2,17 +2,22 @@
 // any amount will do, it may take quite some time however
 //
 // you can put a link and then -x at the end to download only sound or music
-// after the link put -l "en" for english subs if it downloads the wrong one
+// after the link put -l "en*" for english subs if it downloads the wrong one
 // enjoy
 
-https://crunchyroll.com/watch/GY9P2X18R/scrap--build -l enUS
-https://crunchyroll.com/watch/GYGGZP42Y/light--shadow -l enUS
-https://crunchyroll.com/watch/G6494790Y/hide--seek -l enUS
-https://crunchyroll.com/watch/G65V13576/trial--error -l enUS
-https://crunchyroll.com/watch/GR3VX8PQ6/new--old -l enUS
-https://crunchyroll.com/watch/GYWE8952Y/secret--quest -l enUS
-https://beta.crunchyroll.com/watch/GY8VK0GGY/force--solution -l enUS
-https://beta.crunchyroll.com/watch/GRP8ZM01R/war--princess -l enUS
-https://beta.crunchyroll.com/watch/GRNQZ408R/hit--away -l enUS
-https://crunchyroll.com/watch/GY09ZDZ9Y/knight--dragon -l enUS
-https://beta.crunchyroll.com/watch/G6JQ4K18R/heaven--earth -l enUS
+// find a way to download video with no german subtitles embedded
+// if possible find english subtitles embedded
+
+//Tsukimichi -moonlit fantasy-
+https://vrv.co/watch/G8WUN2W3W/failed-hero -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GZ7UVPXQJ/black-spider-of-disaster -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GD9UV2W9P/human-shock -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GQJUGE9N1/too-late -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/G50UZE4KP/the-greedy-wagons-journey -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GWDU8PKV1/the-melancholy-of-handsome-middle-aged-men -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GG1U2DEWG/wondrous-medicine-production -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/G0DUN90GJ/demiplane-ranking -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GEVUZ8GJX/eat-or-be-eaten -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/G7PU4WVP1/hidden-ogre-village -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/G9DUEDPZ0/goodbye -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
+https://vrv.co/watch/GX9UQK7M1/guided-by-the-moon -f dash-audio-ja-JP-hardsub-en-US-f4-v1-x3 -l en-US
