@@ -12,15 +12,7 @@ if there is an error with a video link, go to the youtube-dl git repo
 
 https://github.com/ytdl-org/youtube-dl
 
-FYI: if you are downloading from crunchyroll and the link is something like
-
-https://beta.crunchyroll.com/...
-
-change it to
-
-https://crunchyroll.com/...
-
-because crunchyroll beta seems to throw "unsupported link" errors
+FYI: if you are downloading from crunchyroll the program will change the link to vrv.co
 
 # something to note about crunchyroll and possibly other sites
 

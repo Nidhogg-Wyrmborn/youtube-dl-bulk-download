@@ -67,6 +67,8 @@ for link in links:
         if isen(link):
             lang = link.split("-l")[-1:][0].split(" ")[1]
             link = removeSwitch(link)
+            if 'crunchyroll.com' in link:
+                link = link.replace('crunchyroll.com', 'vrv.co')
             while a != 0 and a != 255:
                 if count < 5:
                     a = os.system(f"youtube-dl --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
@@ -110,6 +112,8 @@ for link in links:
                     break
             print(f"Selected Format: {spec}")
             link = removeSwitch(link)
+            if 'crunchyroll.com' in link:
+                link = link.replace('crunchyroll.com', 'vrv.co')
             while a != 0 and a != 255:
                 if count < 5:
                     if lang:
@@ -144,6 +148,8 @@ for link in links:
 
         else:
             link = removeSwitch(link)
+            if 'crunchyroll.com' in link:
+                link = link.replace('crunchyroll.com', 'vrv.co')
             while a != 0 and a != 255:
                 if count < 5:
                     a = os.system(f"youtube-dl --write-sub --embed-subs \"{link}\"")
