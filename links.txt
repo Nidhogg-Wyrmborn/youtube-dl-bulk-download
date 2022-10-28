@@ -4,9 +4,8 @@
 // you can put a link and then -x at the end to download only sound or music
 // after the link put -l "en*" for english subs if it downloads the wrong one
 // enjoy
-
-// find a way to download video with no german subtitles embedded
-// if possible find english subtitles embedded
+//
+// you can also put an '-f' to select a format, when this is present, the program will ask for a language format (e.g. en-US) and will download hardsubs
 
 //Tsukimichi -moonlit fantasy-
 https://vrv.co/watch/G8WUN2W3W/failed-hero -f hls-audio-ja-JP-hardsub-en-US-8121
