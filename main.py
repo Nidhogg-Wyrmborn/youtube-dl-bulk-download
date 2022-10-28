@@ -1,6 +1,6 @@
 from subprocess import call, STDOUT
 import os, sys
-from datetime import datetime
+import subprocess
 import argparse
 import time
 
@@ -59,6 +59,7 @@ for i in range(len(links)):
 if args.verbose:
     print(f"\n{links}\n")
 success = []
+spectype = str(input("please input language code (e.g. en-US):\n- "))
 for link in links:
     a = 1
     count = 0
@@ -96,11 +97,18 @@ for link in links:
             lang = None
             if isen(link):
                 lang = link.split("-l")[-1:][0].split(" ")[1]
-            print(link)
-            spec = link.split(" -f ")
-            print(spec)
-            spec = spec[-1:][0]
-            print(spec)
+            spec = ''
+            a = subprocess.getoutput(f"youtube-dl -F \"{link}\"")
+            #print(a)
+            a = a.split("resolution note\n")[1]
+            #print(a)
+            a = a.split("\n")
+            a.reverse()
+            for i in a:
+                if spectype in i:
+                    spec = i.split(" ")[0]
+                    break
+            print(f"Selected Format: {spec}")
             link = removeSwitch(link)
             while a != 0 and a != 255:
                 if count < 5:
