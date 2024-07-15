@@ -39,11 +39,11 @@ if "win" in sys.platform:
 else:
     os.system("clear")
 if args.verbose:
-    print("checking for updates for youtube-dl")
+    print("checking for updates for yt-dlp")
     print(f"currently running on {sys.platform}")
-    os.system("youtube-dl --version")
+    os.system("yt-dlp --version")
 print()
-os.system("youtube-dl -U")
+os.system("yt-dlp -U")
 print()
 with open("links.txt", 'r') as f:
     links = f.readlines()
@@ -71,23 +71,23 @@ for link in links:
                 link = link.replace('crunchyroll.com', 'vrv.co')
             while a != 0 and a != 255:
                 if count < 5:
-                    a = os.system(f"youtube-dl --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
+                    a = os.system(f"yt-dlp --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
                 if count >= 5:
                     if "win" in sys.platform:
                         os.system("cls")
                     else:
                         os.system("clear")
-                    a = os.system(f"youtube-dl -v --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
+                    a = os.system(f"yt-dlp -v --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
                     if a != 0:
-                        print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
-                        print("\nyoutube-dl version: ", end="")
-                        os.system("youtube-dl --version")
-                        print("\nhttps://github.com/ytdl-org/youtube-dl")
+                        print("please copy and paste the above result into an issue on yt-dlps github")
+                        print("\nyt-dlp version: ", end="")
+                        os.system("yt-dlp --version")
+                        print("\nhttps://github.com/ytdl-org/yt-dlp")
                         print()
-                        print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
+                        print("this program is a custom script to make using yt-dlp easier and more efficient with less babysitting")
                         print("please create an issue in this script's github in the event that it is related to this program")
-                        print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
-                        print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
+                        print("\nhttps://github.com/Nidhogg-Wyrmborn/yt-dlp-bulk-download\n")
+                        print("please include these last lines in all issues created as it will help the developers of yt-dlp to ascertain whether it is their program or mine at fault")
                         print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
                         print(f"Current download: {link}"+"\n\n")
                         print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
@@ -100,7 +100,7 @@ for link in links:
             if isen(link):
                 lang = link.split("-l")[-1:][0].split(" ")[1]
             spec = ''
-            a = subprocess.getoutput(f"youtube-dl -F \"{link}\"")
+            a = subprocess.getoutput(f"yt-dlp -F \"{link}\"")
             #print(a)
             a = a.split("resolution note\n")[1]
             #print(a)
@@ -117,29 +117,29 @@ for link in links:
             while a != 0 and a != 255:
                 if count < 5:
                     if lang:
-                        a = os.system(f"youtube-dl -f {spec} --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
+                        a = os.system(f"yt-dlp -f {spec} --write-sub --embed-subs --sub-langs \"{lang}\" \"{link}\"")
                     else:
-                        print(f"youtube-dl -f {spec} \"{link}\"")
-                        a = os.system(f"youtube-dl -f {spec} \"{link}\"")
+                        print(f"yt-dlp -f {spec} \"{link}\"")
+                        a = os.system(f"yt-dlp -f {spec} \"{link}\"")
                 if count >= 5:
                     if "win" in sys.platform:
                         os.system("cls")
                     else:
                         os.system("clear")
                     if lang:
-                        a = os.system(f"youtube-dl -v -f {spec} --write-sub --embed_subs --sub-langs \"{lang}\" \"{link}\"")
+                        a = os.system(f"yt-dlp -v -f {spec} --write-sub --embed_subs --sub-langs \"{lang}\" \"{link}\"")
                     if not lang:
-                        a = os.system(f"youtube-dl -v -f {spec} \"{link}\"")
+                        a = os.system(f"yt-dlp -v -f {spec} \"{link}\"")
                     if a != 0:
-                        print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
-                        print("\nyoutube-dl version: ", end="")
-                        os.system("youtube-dl --version")
-                        print("\nhttps://github.com/ytdl-org/youtube-dl")
+                        print("please copy and paste the above result into an issue on yt-dlps github")
+                        print("\nyt-dlp version: ", end="")
+                        os.system("yt-dlp --version")
+                        print("\nhttps://github.com/ytdl-org/yt-dlp")
                         print()
-                        print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
+                        print("this program is a custom script to make using yt-dlp easier and more efficient with less babysitting")
                         print("please create an issue in this script's github in the event that it is related to this program")
-                        print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
-                        print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
+                        print("\nhttps://github.com/Nidhogg-Wyrmborn/yt-dlp-bulk-download\n")
+                        print("please include these last lines in all issues created as it will help the developers of yt-dlp to ascertain whether it is their program or mine at fault")
                         print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
                         print(f"Current download: {link}"+"\n\n")
                         print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
@@ -152,23 +152,23 @@ for link in links:
                 link = link.replace('crunchyroll.com', 'vrv.co')
             while a != 0 and a != 255:
                 if count < 5:
-                    a = os.system(f"youtube-dl --write-sub --embed-subs \"{link}\"")
+                    a = os.system(f"yt-dlp --write-sub --embed-subs \"{link}\"")
                 if count >= 5:
                     if "win" in sys.platform:
                         os.system("cls")
                     else:
                         os.system("clear")
-                    a = os.system(f"youtube-dl -v --write-sub --embed-subs \"{link}\"")
+                    a = os.system(f"yt-dlp -v --write-sub --embed-subs \"{link}\"")
                     if a != 0:
-                        print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
-                        print("\nyoutube-dl version: ", end="")
-                        os.system("youtube-dl --version")
-                        print("\nhttps://github.com/ytdl-org/youtube-dl")
+                        print("please copy and paste the above result into an issue on yt-dlps github")
+                        print("\nyt-dlp version: ", end="")
+                        os.system("yt-dlp --version")
+                        print("\nhttps://github.com/ytdl-org/yt-dlp")
                         print()
-                        print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
+                        print("this program is a custom script to make using yt-dlp easier and more efficient with less babysitting")
                         print("please create an issue in this script's github in the event that it is related to this program")
-                        print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
-                        print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
+                        print("\nhttps://github.com/Nidhogg-Wyrmborn/yt-dlp-bulk-download\n")
+                        print("please include these last lines in all issues created as it will help the developers of yt-dlp to ascertain whether it is their program or mine at fault")
                         print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
                         print(f"Current download: {link}"+"\n\n")
                         print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
@@ -181,23 +181,23 @@ for link in links:
         link = removeSwitch(link)
         while a != 0 and a != 255:
             if count < 5:
-                a = os.system(f"youtube-dl -x --audio-format mp3 \"{link}\"")
+                a = os.system(f"yt-dlp -x --audio-format mp3 \"{link}\"")
             if count >= 5:
                 if "win" in sys.platform:
                     os.system("cls")
                 else:
                     os.system("clear")
-                a = os.system(f"youtube-dl -v -x --audio-format mp3 \"{link}\"")
+                a = os.system(f"yt-dlp -v -x --audio-format mp3 \"{link}\"")
                 if a != 0:
-                    print("please copy and paste the above result into an issue on YOUTUBE-DLs github")
-                    print("\nyoutube-dl version: ", end="")
-                    os.system("youtube-dl --version")
-                    print("\nhttps://github.com/ytdl-org/youtube-dl")
+                    print("please copy and paste the above result into an issue on yt-dlps github")
+                    print("\nyt-dlp version: ", end="")
+                    os.system("yt-dlp --version")
+                    print("\nhttps://github.com/ytdl-org/yt-dlp")
                     print()
-                    print("this program is a custom script to make using youtube-dl easier and more efficient with less babysitting")
+                    print("this program is a custom script to make using yt-dlp easier and more efficient with less babysitting")
                     print("please create an issue in this script's github in the event that it is related to this program")
-                    print("\nhttps://github.com/Nidhogg-Wyrmborn/youtube-dl-bulk-download\n")
-                    print("please include these last lines in all issues created as it will help the developers of youtube-dl to ascertain whether it is their program or mine at fault")
+                    print("\nhttps://github.com/Nidhogg-Wyrmborn/yt-dlp-bulk-download\n")
+                    print("please include these last lines in all issues created as it will help the developers of yt-dlp to ascertain whether it is their program or mine at fault")
                     print("\nthank you\n\nplease be aware that some errors are caused by lack of internet, if these errors persist in 10-20 minutes please report them\n\n")
                     print(f"Current download: {link}"+"\n\n")
                     print(f"List of succesful downloads:\n"+('\n- '.join(success) if len(success) >= 1 else "NONE"))
